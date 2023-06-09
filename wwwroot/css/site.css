@@ -1,0 +1,73 @@
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 20px 60px 0px 20px;
+}
+
+footer {
+  position: fixed; 
+  bottom: 0; 
+  margin: 10px 0px 20px 0px;
+}
+
+*{
+  margin: 5px;
+  padding: 0;
+}
+
+body{
+  background-color: aqua;
+}
+.indice1{
+  float: left;
+}
+
+.indice h4 a{
+float: left;
+margin: 5%;
+font-size: 30px;
+border: 3px solid black;
+border-radius: 60px;
+text-decoration: none;
+}
+
+.contenido{
+  margin: 1%;
+  width: 100%;
+  float: right;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.imagenes img{
+  width: auto;
+  height: 300px;
+  
+}
+.imagenes{
+margin-left: 8%;
+}
+
+.eslogan img{
+  margin: 1%;
+  border: 2px solid black;
+  border-radius: 8%;
+}
+.eslogan{
+  margin-left: 35%;
+
+}
+
+.imagenMia{
+  margin-left: 40%;
+}

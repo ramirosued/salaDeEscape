@@ -71,3 +71,20 @@ margin-left: 8%;
 .imagenMia{
   margin-left: 40%;
 }
+
+.adelanto{
+  margin-top: 5%;
+  border: 3px solid red;
+  width: 20%;
+  float:left;
+}
+
+.intro h4{
+  border: 3px solid green;
+  border-radius: 3%;
+  float:left;
+  font-size: 30px;
+}
+.intro{
+  width: 15%;
+}

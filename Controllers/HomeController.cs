@@ -16,37 +16,26 @@ public class HomeController : Controller
 
      public IActionResult Comenzar()
     {
-        
-        return View("Habitacion1");
+        int num = Escape.GetEstadoJuego();
+        if(num==5){
+        num=Escape.ReiniciarEstadoJuego();
+        }
+        return View("Habitacion"+num);
+
     }
 
 
     public IActionResult Habitacion(int sala, string clave)
     {
+        
         int num = Escape.GetEstadoJuego();
         bool respuestaCorrecta = Escape.ResolverSala(sala, clave);
         if(respuestaCorrecta==true){
         num = Escape.GetEstadoJuego();
+        }else{
+            ViewBag.tuRespuesta="Respuesta Incorecta";
         }
-        string salaAIr="dd";
-        switch (num){
-            case 0:
-            salaAIr = "Habitacion1";
-            break;
-            case 1:
-            salaAIr = "Habitacion2";
-            break;
-            case 2:
-            salaAIr = "Habitacion3";
-            break;
-            case 3:
-            salaAIr ="Habitacion4";
-            break;
-            case 4:
-            salaAIr="HabitacionFinal";
-            break;
-        }
-        return View(salaAIr);
+        return View("Habitacion"+num);
     }
 
 

@@ -1,13 +1,16 @@
 <h1>Bienvenido a la primera sala, MUCHA SUERTE</h1>
 <h3>Acabas de entrar al hotel y para seguir avanzando tendras que encontrar 7 palabras ocultas y convinar la primera letra de cada palabra entre si</h3>
+
+<div class="acertijo">
 <img src="/sopaDeLetras.png" width="500">
 <form action='@Url.Action("Habitacion","Home")'>
-    <th><input type="respuesta" name="clave"></th>
+    <th><input autocomplete="off" type="respuesta" name="clave" required></th>
     <input type="submit" value="ResolverSala">
 </form>
 <h3>@ViewBag.tuRespuesta</h3>
-<h4>Para ayudarte:</h4>
+</div>
 
+<h4>Para ayudarte:</h4>
 <button onclick="alert('Pista 1: Son dos palabras')"> Pista 1 </button>
 <button onclick="alert('Pista 2: Las palabras son en ingles')"> Pista 2 </button>
 

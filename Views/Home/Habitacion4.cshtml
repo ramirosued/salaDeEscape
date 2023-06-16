@@ -4,7 +4,7 @@
 </h5>
 
 <form action='@Url.Action("Habitacion","Home")'>
-    <th><input type="respuesta" min="4310" max="4310" name="clave"></th>
+    <th><input autocomplete="off" type="respuesta" name="clave" required></th>
     <input type="submit" value="ResolverSala">
 </form>
 <h3>@ViewBag.tuRespuesta</h3>

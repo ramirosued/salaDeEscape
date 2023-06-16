@@ -10,21 +10,6 @@ html {
   }
 }
 
-body {
-  margin: 20px 60px 0px 20px;
-}
-
-footer {
-  position: fixed; 
-  bottom: 0; 
-  margin: 10px 0px 20px 0px;
-}
-
-*{
-  margin: 5px;
-  padding: 0;
-}
-
 body{
   background-color: aqua;
 }
@@ -50,8 +35,7 @@ text-decoration: none;
 }
 
 .imagenes img{
-  width: auto;
-  height: 300px;
+  width: 30%;
   
 }
 .imagenes{
@@ -64,19 +48,21 @@ margin-left: 8%;
   border-radius: 8%;
 }
 .eslogan{
-  margin-left: 35%;
-
+text-align: center;
 }
 
 .imagenMia{
-  margin-left: 40%;
+text-align: center;
 }
 
 .adelanto{
   margin-top: 5%;
   border: 3px solid red;
-  width: 20%;
+  width: 17%;
   float:left;
+}
+.adelanto h4,h3{
+  font-size: 100%;
 }
 
 .intro h4{
@@ -87,4 +73,11 @@ margin-left: 8%;
 }
 .intro{
   width: 15%;
+}
+
+.acertijo img{
+  width: 35%;
+}
+.acertijo{
+text-align: center;
 }
